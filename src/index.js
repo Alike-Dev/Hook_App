@@ -9,7 +9,12 @@ import ReactDOM from 'react-dom/client';
 // import SimpleFormWithCustomHook from './components/02 - useEffect/SimpleFormWithCustomHook';
 // import MultipleCustomHooks from './components/03 - Examples/MultipleCustomHooks';
 // import FocusScreen from './components/04 - UseRef/FocusScreen';
-import RealExampleUseRef from './components/04 - UseRef/RealExampleUseRef';
+// import RealExampleUseRef from './components/04 - UseRef/RealExampleUseRef';
+// import Layout from './components/05 - useLayoutEffect/Layout';
+// import Memorize from './components/06 - Memo/Memorize';
+// import MemoHook from './components/06 - Memos/MemoHook';
+// import CallBackHook from './components/06 - Memos/CallBackHook';
+import { Padre } from './components/07-tarea-memo/Padre';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +24,12 @@ root.render(
   // <CounterAppWithCustomHook/>
   // <SimpleForm />
   // <SimpleFormWithCustomHook />
-  <RealExampleUseRef />
+  // <RealExampleUseRef />
+  // <Layout />
+  // <Memorize />
+  // <MemoHook />
+  // <CallBackHook />
+  <Padre />
 );
 
 // If you want to start measuring performance in your app, pass a function

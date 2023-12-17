@@ -19,6 +19,12 @@ const useFetch = (url) => {
 
 
     useEffect(() => {
+
+        setState({
+            data: '',
+            loading : true,
+            error : null
+        })
       
         fetch(url)
             .then(resp => resp.json())
@@ -34,6 +40,13 @@ const useFetch = (url) => {
                     })
                 }                    
                     
+            }).catch(()=>{
+                console.log('ERROR : No hay conexion con el API');
+                setState({
+                    data: '',
+                    loading : false,
+                    error : null
+                })
             })
 
     }, [url]);

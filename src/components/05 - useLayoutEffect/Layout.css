@@ -1,0 +1,17 @@
+body {
+    padding: 70px;
+}
+
+h6 {
+    color: darkgrey;
+}
+.Container-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Buttons-Container {
+    display: flex;
+    justify-content: space-between;
+}
