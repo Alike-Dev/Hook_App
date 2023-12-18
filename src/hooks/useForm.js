@@ -2,6 +2,10 @@ import { useState } from "react"
 
 const useForm = (initialState) => {
     const [dataFrom, setDataFrom ] = useState(initialState)
+
+    const reset = ()=> {
+      setDataFrom(initialState)
+    }
     
     const handleOnChangeEvent = ({target})=>{
         setDataFrom({
@@ -9,7 +13,7 @@ const useForm = (initialState) => {
         [target.name] : target.value
         })
     }
-  return [dataFrom, handleOnChangeEvent]
+  return [dataFrom, handleOnChangeEvent, reset]
 }
 
 export default useForm
