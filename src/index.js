@@ -14,7 +14,8 @@ import ReactDOM from 'react-dom/client';
 // // import MemoHook from './components/06 - Memos/MemoHook';
 // // import CallBackHook from './components/06 - Memos/CallBackHook';
 // import { Padre } from './components/07-tarea-memo/Padre';
-import TodoApp from './components/08 - useReducer/TodoApp'
+// import TodoApp from './components/08 - useReducer/TodoApp'
+import MainApp from './components/09 - useContext/MainApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,7 +30,8 @@ root.render(
   // <MemoHook />
   // <CallBackHook />
   // <Padre />
-  <TodoApp />
+  // <TodoApp />
+  <MainApp />
 );
 
 // If you want to start measuring performance in your app, pass a function
