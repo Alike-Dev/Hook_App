@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 // // import HookApp from './HookApp';
 // // import CounterApp from './components/01 - useState/CounterApp';
@@ -17,7 +17,8 @@ import ReactDOM from 'react-dom/client';
 // import TodoApp from './components/08 - useReducer/TodoApp'
 import MainApp from './components/09 - useContext/MainApp';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <HookApp />
   // <CounterApp/>
@@ -32,10 +33,7 @@ root.render(
   // <Padre />
   // <TodoApp />
   <MainApp />
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+  
+)
 
 // import './components/08 - useReducer/IntroReducer';

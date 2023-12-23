@@ -1,13 +1,20 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import './styles.css'
+import AppRouter from './AppRouter'
+
+import UserContext from './UserContext'
+// import './styles.css'
 
 const MainApp = () => {
   return (
-    <div>
-        <h1>Main App</h1>
-        <hr />      
-    </div>
+    <UserContext.Provider value={''}>
+      <Router>
+    
+        <AppRouter />
+  
+      </Router>
+    </UserContext.Provider>
   )
 }
 

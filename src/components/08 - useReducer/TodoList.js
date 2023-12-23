@@ -8,7 +8,7 @@ const TodoList = ({todos, handleDelete, handleToggle}) => {
               className='todos-container'>
               <ul className='list-group list-group-flush'>
                 {
-                  todos.length == 0?
+                  todos.length === 0?
                     (
                       <small className='text-secondary'> No hay tareas aun :( </small>
                     )
