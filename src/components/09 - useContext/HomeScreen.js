@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import './styles.css'
+import UserContext from './UserContext';
 
 const HomeScreen = () => {
+
+  const { user } = useContext(UserContext);
+
   return (
     <div>
       <h1>Home Screen</h1>
       <hr />
+      <pre>
+        {
+          JSON.stringify(user, null, 4)
+        }
+      </pre>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         Odio repudiandae repellendus nemo in veritatis temporibus 
